@@ -38,7 +38,14 @@ The task is episodic, and in order to solve the environment, the agent must get 
 
 ## Running the project
 
-The main process is described inisde the [Navigation.ipynb](./Navigation.ipynb)
+The main process is described inisde the [Navigation.ipynb](./Navigation.ipynb). To do a quick run you can run all cells in this notebook.
+
+However, the project's core logic and description are inside the following files:
+
+* [model.py](./model.py) : This file constains all information regarding the model used to estimate the Q-value for the agent. The architecture of the Deep Neural Network is defined here.
+* [dqn_agent.py](./dqn_agent.py) : This file contains all information regarding the RL Agent where Replay memory is defined as well as implementing an instance of the model in "model.py" 
+* [checkpoint.pth](./checkpoint.pth) : This file contains the weights of the final agent after training. Loading this weigths into an Agent's model will allow us to replicate the best performance of the work achieved in this project. 
+* [Report.md](./Report.md) : This file describes the learning algorithm in more detail, as well as future work ideas to improve the project's scope.
 
 
 
